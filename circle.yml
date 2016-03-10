@@ -70,7 +70,7 @@ test:
 #    - ./scripts/e2e-test.sh --packager
 
     # testing docs generation is not broken
-#    - cd website && node ./server/generate.js
+    - cd website && node ./server/generate.js
   post:
     # copy test report for Circle CI to display
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
